@@ -12,5 +12,4 @@ jobs:
     steps:
       - uses: actions/chechokout@v4
       - run: echo "Hola mundo ${{ github.actor }}, commit ${{ github.sha }}
-      - run: echo "Elegiste: ${{ inputs.saludo }}"
-
+      - run: 'echo "Elegiste: ${{ inputs.saludo }}"'
