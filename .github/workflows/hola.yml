@@ -13,7 +13,7 @@ jobs:
   saludar:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/chechokut@v4
+      - uses: actions/chechokout@v4
       - run: echo "Hola mundo ${{ github.actor }}, commit ${{ github.sha }}
       - run: echo "Elegiste: ${{ inputs.saludo }}"
 
