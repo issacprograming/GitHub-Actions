@@ -1,14 +1,11 @@
 name: hola mundo
-
 on: 
   push:
   workflow_dispatch:
     inputs:
       saludo:
         type: choice
-        options: [Hola, buenas, qué tal]         
-        
-
+        options: [Hola, buenas, qué tal]                 
 jobs:
   saludar:
     runs-on: ubuntu-latest
