@@ -1,15 +1,15 @@
-name: hola mundo
-on: 
+name: Hola mundo
+on:
   push:
   workflow_dispatch:
     inputs:
       saludo:
         type: choice
-        options: [Hola, buenas, qué tal]                 
+        options: [Hola, Buenas, Qué tal]
 jobs:
   saludar:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: echo "Hola mundo ${{ github.actor }}, comit ${{ github.sha }}
+      - run: echo "Hola ${{ github.actor }}, commit ${{ github.sha }}"
       - run: 'echo "Elegiste: ${{ inputs.saludo }}"'
